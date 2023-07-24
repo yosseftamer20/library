@@ -1,83 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Library</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f2f2f2;
-        }
+ {% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='page_admin.css') }}"/>
+    {% endblock %}
 
 
-        h1 {
-            margin-top: 50px;
-            font-size: 30px;
-            color: #333;
-        }
+{% block content %}
 
-        .button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin: 20px 10px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #4CAF50;
-        }
-
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-
-        .button-group {
-            margin-top: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .button-group button {
-            flex: 1 1 200px;
-            margin: 10px;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .button1 {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            float: right;
-            margin-top: 1px;
-            margin-right: 16px;
-
-        }
-
-        .button1:hover {
-            background-color: #3e8e41;
-        }
-
-
-    </style>
-</head>
 <body>
 <nav>
     <h1>welcome {{x}}</h1>
@@ -87,37 +15,53 @@
 </nav>
 <div class="button-group">
 
-<!--    <button class="button">-->
-<!--        <a href="/create_member">Create account</a>-->
-<!--    </button>-->
-    <button class="button">
-        <a href="/books">Search book</a>
-    </button>
-    <button class="button">
-        <a href="/checkout">Checkout book</a>
-    </button>
-    <button class="button">
-        <a href="/return_book">Return book</a>
-    </button>
-    <button class="button">
-        <a href="/all_members">All members</a>
-    </button>
-    <button class="button">
-        <a href="/all_books">All books</a>
-    </button>
-    <button class="button">
-        <a href="/Borrower_books">Borrower books</a>
-    </button>
-    <button class="button">
-        <a href="/Available_books">Available books</a>
-    </button>
-    <button class="button">
-        <a href="/The_most_borrowed_book">The most borrowed book</a>
-    </button>
-    <button class="button">
-        <a href="/The_least_borrowed_book">The least borrowed book</a>
-    </button>
+    <!--    <button class="button">-->
+    <!--        <a href="/create_member">Create account</a>-->
+    <!--    </button>-->
+    <a href="/books">
+        <button class="button">
+            Search book
+        </button>
+    </a>
+    <a href="/checkout">
+        <button class="button">
+            Checkout book
+        </button>
+    </a>
+    <a href="/return_book">
+        <button class="button">
+            Return book
+        </button>
+    </a>
+    <a href="/all_members">
+        <button class="button">
+            All members
+        </button>
+    </a>
+    <a href="/all_books">
+        <button class="button">
+            All books
+        </button>
+    </a>
+    <a href="/Borrower_books">
+        <button class="button">
+            Borrower books
+        </button>
+    </a>
+    <a href="/Available_books">
+        <button class="button">
+            Available books
+        </button>
+    </a>
+    <a href="/The_most_borrowed_book">
+        <button class="button">
+            The most borrowed book
+        </button>
+    </a>
+    <a href="/The_least_borrowed_book">
+        <button class="button">
+            The least borrowed book
+        </button>
+    </a>
 </div>
-</body>
-</html>
-<!--users.html-->
+{% endblock %}

@@ -189,6 +189,14 @@ def The_least_borrowed_book():
     else:
         return render_template('input_date.html')
 
+@app.route('/contact_us')
+def contact():
+    return render_template("contact_us.html")
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
 
 # @app.route('/')
 # def add_book():
