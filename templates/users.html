@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 30px;
+            color: #333;
+        }
+
+        .button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 20px 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4CAF50;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .button-group {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .button-group button {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .button1 {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            float: right;
+            margin-top: 1px;
+            margin-right: 16px;
+
+        }
+
+        .button1:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+<h1>welcome {{x}}</h1>
+<button class="button1">
+    <a href="/logout">logout</a>
+</button>
+<div class="button-group">
+    <button class="button">
+        <a href="/books">Search book</a>
+    </button>
+    <button class="button">
+        <a href="/checkout">Checkout book</a>
+    </button>
+    <button class="button">
+        <a href="/return_book">Return book</a>
+    </button>
+
+</div>
+</body>
+</html>
+<!--users.html-->

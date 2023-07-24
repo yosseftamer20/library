@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type=text] {
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 60%;
+        }
+
+        button  {
+            background-color: #4CAF50;
+            color: white;
+            padding: 7px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+        a{
+
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        {% for n in results[0] %}
+        <th>{{n}}</th>
+        {% endfor %}
+    </tr>
+    {% for i in results[1] %}
+    <tr>
+        {% for x in i %}
+        <td>
+            {{ x}}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+<form>
+    <label for="book id">book id:</label>
+    <input type="text" id="book id" name="book id">
+    <button type="submit">Submit</button>
+    <br>
+    <button>
+        <a href="/" title="go to home page" it>Go to home page</a>
+    </button>
+</form>
+</body>
+</html>

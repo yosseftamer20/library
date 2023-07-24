@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    List of All Our Members
+</h1>
+<ol>
+{% for i in members %}
+<li>{{ i[0] }}
+{% endfor %}
+</ol>
+<a href="/start" title="go to home page" it>Go to home page</a>
+</body>
+</html>

@@ -1,0 +1,57 @@
+id,name,status
+1,Python Crash Course,Borrowed
+2,Clean Code: A Handbook of Agile Software Craftsmanship,Borrowed,
+3,The Pragmatic Programmer: From Journeyman to Master,Borrowed
+4,Head First Design Patterns,Lost
+5,Code Complete: A Practical Handbook of Software Construction,Borrowed
+6,Refactoring: Improving the Design of Existing Code,Borrowed
+7,The Mythical Man-Month: Essays on Software Engineering,Borrowed
+8,Eloquent JavaScript: A Modern Introduction to Programming,Lost
+9,Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems,Available
+10,The Clean Architecture: A Craftsman's Guide to Software Structure and Design,Borrowed
+11,Don't Make Me Think: A Common Sense Approach to Web Usability,Borrowed
+12,Learning React: A Hands-On Guide to Building Web Applications Using React and Redux,Lost
+13,Cracking the Coding Interview: 189 Programming Questions and Solutions,Borrowed
+14,The Art of Computer Programming, Volumes 1-4A Boxed Set,Borrowed
+15,Head First Java,Borrowed
+16,Learning Python, 5th Edition,Lost
+17,Code: The Hidden Language of Computer Hardware and Software,Borrowed
+18,JavaScript: The Good Parts,Borrowed
+19,Programming Pearls (2nd Edition),Borrowed
+20,Web Development with Node and Express: Leveraging the JavaScript Stack,Lost
+21,Data Structures and Algorithms in Python,Borrowed
+22,Agile Software Development, Principles, Patterns, and Practices,Borrowed
+23,The C Programming Language,Borrowed
+24,Programming in Scala,Lost
+25,Algorithms (4th Edition),Borrowed
+26,Test-Driven Development: By Example,Borrowed
+27,Effective Java: Programming Language Guide,Borrowed
+28,Head First Object-Oriented Analysis and Design,Lost
+29,The Linux Programming Interface: A Linux and UNIX System Programming Handbook,Borrowed
+30,Fluent Python: Clear, Concise, and Effective Programming,Borrowed
+31,Computer Networking: A Top-Down Approach,Borrowed
+32,The Ruby Programming Language,Lost
+33,Deep Learning with Python,Borrowed
+34,The Algorithm Design Manual,Borrowed
+35,Refactoring to Patterns,Borrowed
+36,Computer Systems: A Programmer's Perspective,Lost
+37,Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5,Available
+38,Artificial Intelligence with Python,Borrowed
+39,The Design of Everyday Things,Available
+40,Domain-Driven Design: Tackling Complexity in the Heart of Software,Lost
+41,Learning SQL,Available
+42,Data Science from Scratch: First Principles with Python,Borrowed
+43,The Architecture of Open Source Applications,Available
+44,Professional JavaScript for Web Developers,Lost
+45,Database Systems: The Complete Book,Available
+46,Practical Object-Oriented Design in Ruby,Borrowed
+47,Computer Organization and Design MIPS Edition,Available
+48,The Elements of Computing Systems: Building a Modern Computer from First Principles,Lost
+49,Mastering Regular Expressions: Understand Your Data and Be More Productive,Available
+50,Programming Rust: Fast, Safe Systems Development,Borrowed
+51,Operating System Concepts,Available
+52,Learning Perl,Lost
+53,Machine Learning for Dummies,Available
+54,Effective C++: 55 Specific Ways to Improve Your Programs,Borrowed
+55,Computer Graphics: Principles and Practice,Available
+56,Introduction to Algorithms,Lost
