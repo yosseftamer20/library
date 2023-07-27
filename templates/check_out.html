@@ -1,23 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href= "{{ url_for('static',filename='check_out.css') }}"/>
-</head>
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static',filename='check_out.css') }}"/>
+ {% endblock %}
+
+{% block content %}
 <body>
 <form>
-    <label for="book id">book id:</label>
-    <input type="text" id="book id" name="book id">
-    <br>
-    <br>
-    <button type="submit">Submit</button>
-    <br>
-    <br>
     <button>
         <a href="/" title="go to home page">Go to home page</a>
     </button>
 </form>
+<table border="1 px">
+    <tr>
+        {% for n in results[0] %}
+        <th>{{n}}</th>
+        {% endfor %}
+        <th>check out</th>
+    </tr>
+    {% for i in results[1]%}
 
-</body>
-</html>
+    <tr>
+        {% for x in i %}
+        <td>
+            {{ x}}
+        </td>
+        {% endfor %}
+        <td>
+            <a style="color: black" href="/checkout?user id={{user_id}}&book id= {{i[0]}}">
+                Checkout
+            </a>
+
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

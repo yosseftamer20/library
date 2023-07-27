@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='base.css') }}"/>
     {%block css%}
     {% endblock %}
 </head>
 <body>
-<h4>Library Management System</h4>
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: left;">Library Management System</div>
+    <div style="text-align: right;">{{session['name']}}
+        <button class="button1">
+            <a href="/logout">logout</a>
+        </button>
+    </div>
+
+</div>
 <hr>
 
 {%block content%}

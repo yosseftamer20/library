@@ -98,20 +98,26 @@ def checkout():
         if user_id:
             # member_id = member_id[0][0]
             book_id = request.args["book id"]
-            book_id = handle_db(f"SELECT id FROM books where id = {book_id} and status ='Available'")
             if book_id:
                 book_id = book_id[1][0][0]
                 handle_db(f"update books set status = 'Borrowed' where id={book_id}")
                 handle_db(f"update books set borrower_id ='{user_id}'  where id={book_id}")
                 handle_db(
                     f"insert into operations (book_id, user_id ,borrow_date,expected_return_date) values ({book_id},{user_id},date ('now'),date('now', '+7 days'));")
+
             else:
-                print("Invalid book")
+                return "Invalid book"
         else:
-            print("Invalid id")
-        return render_template("users.html")
+            return "Invalid id"
+
+        if session['type'] == 'admin':
+            return render_template('page_admin.html',x=session['name'])
+        else:
+            return render_template('users.html',x=session['name'])
     else:
-        return render_template("check_out.html")
+        books= handle_db(f"select id ,name from books where status ='Available' ")
+
+        return render_template("check_out.html" , results= books, user_id=session['id'])
 
 
 @app.route('/return_book')
@@ -196,6 +202,7 @@ def contact():
 @app.route('/about')
 def about():
     return render_template("about.html")
+
 
 
 # @app.route('/')

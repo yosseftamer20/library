@@ -1,17 +1,13 @@
  {% extends "base.html" %}
 {% block css %}
     <link rel="stylesheet" href="{{ url_for('static',filename='page_admin.css') }}"/>
-    {% endblock %}
-
+ {% endblock %}
 
 {% block content %}
-
 <body>
 <nav>
     <h1>welcome {{x}}</h1>
-    <button class="button1">
-        <a href="/logout">logout</a>
-    </button>
+
 </nav>
 <div class="button-group">
 
